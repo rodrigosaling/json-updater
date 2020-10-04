@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>JSON Updater</h1>
+      <p>
+        Compare two JSON and choose which differences you want to merge in the
+        file.
+      </p>
+      <form>
+        <textarea name="source1" id="source1" cols="30" rows="10" />
+        <textarea name="source2" id="source2" cols="30" rows="10" />
+
+        <button type="submit">Compare and proceed</button>
+      </form>
     </div>
   );
 }
