@@ -3,17 +3,15 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    es6: true,
   },
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  extends: [
-    'airbnb',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
-  ],
+  parser: 'babel-eslint',
+  extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['react', 'prettier', 'react-hooks'],
   // add your custom rules here
   rules: {
